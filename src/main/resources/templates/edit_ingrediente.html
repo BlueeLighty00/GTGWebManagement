@@ -33,8 +33,20 @@
                             <input th:field="*{tipo}" type="text" class="form-control" id="ingredientType">
                         </div>
                         <div class="mb-3">
-                            <label for="ingredientPrice" class="form-label">Precio del Ingrediente</label>
-                            <input th:field="*{precio}" type="text" class="form-control" id="ingredientPrice">
+                            <label for="kcal" class="form-label">Kcal</label>
+                            <input th:field="*{kcal}" type="text" class="form-control" id="kcal">
+                        </div>
+                        <div class="mb-3">
+                            <label for="protein" class="form-label">Proteina</label>
+                            <input th:field="*{protein}" type="text" class="form-control" id="protein">
+                        </div>
+                        <div class="mb-3">
+                            <label for="carbohidrate" class="form-label">Carbohidratos</label>
+                            <input th:field="*{carbohidrate}" type="text" class="form-control" id="carbohidrate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fat" class="form-label">Grasas</label>
+                            <input th:field="*{fat}" type="text" class="form-control" id="fat">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg px-4">Guardar</button>
                     </form>

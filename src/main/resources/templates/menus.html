@@ -41,7 +41,6 @@
             <th scope="col">Id</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
-            <th scope="col">Price</th>
             <th scope="col">Actions</th>
         </tr>
         </thead>
@@ -50,7 +49,6 @@
             <th scope="row" th:text="${menu.id}"></th>
             <td th:text="${menu.nombre}"></td>
             <td th:text="${menu.descripcion}"></td>
-            <td th:text="${menu.precioMenu}"></td>
             <td class="td-actions">
                 <div class="td-actions__wrapper">
                     <a th:href="@{'/menu/' + ${menu.id}}" role="button" class="btn btn-primary">

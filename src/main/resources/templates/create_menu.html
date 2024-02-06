@@ -33,12 +33,6 @@
                 <input placeholder="Descripción" type="text"
                        class="form-control" id="description" required th:field="*{descripcion}">
               </div>
-              <div class="mb-3">
-                <label for="menuPrice" class="form-label">Precio</label>
-                <input type="text" class="form-control" id="menuPrice"
-                       placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
-                       th:field="*{precioMenu}">
-              </div>
               <button type="submit" class="btn btn-primary btn-lg px-4">Guardar</button>
             </form>
           </div>

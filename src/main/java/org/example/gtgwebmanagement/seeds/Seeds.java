@@ -26,16 +26,16 @@ public class Seeds {
 
     private void seedIngredientes() {
         if (ingredienteService.findAll().length == 0) {
-            Ingrediente tomate = new Ingrediente("Tomate", 5.0, "Vegetal");
-            Ingrediente pollo = new Ingrediente("Pollo", 10.0, "Proteína");
-            Ingrediente lechuga = new Ingrediente("Lechuga", 3.0, "Vegetal");
-            Ingrediente arroz = new Ingrediente("Arroz", 4.0, "Carbohidrato");
-            Ingrediente salmon = new Ingrediente("Salmón", 15.0, "Proteína");
-            Ingrediente pepino = new Ingrediente("Pepino", 2.0, "Vegetal");
-            Ingrediente frijoles = new Ingrediente("Frijoles", 7.0, "Proteína");
-            Ingrediente aguacate = new Ingrediente("Aguacate", 8.0, "Grasa");
-            Ingrediente queso = new Ingrediente("Queso", 6.0, "Proteína");
-            Ingrediente maiz = new Ingrediente("Maíz", 3.0, "Carbohidrato");
+            Ingrediente tomate = new Ingrediente("Tomate", 5.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente pollo = new Ingrediente("Pollo", 10.0, "Carne", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente lechuga = new Ingrediente("Lechuga", 15.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente arroz = new Ingrediente("Arroz", 20.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente salmon = new Ingrediente("Salmón", 25.0, "Pescado", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente pepino = new Ingrediente("Pepino", 30.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente frijoles = new Ingrediente("Frijoles", 25.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente aguacate = new Ingrediente("Aguacate", 20.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente queso = new Ingrediente("Queso", 15.0, "Lacteo", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente maiz = new Ingrediente("Maíz", 10.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
 
             ingredienteService.save(tomate);
             ingredienteService.save(pollo);
@@ -54,17 +54,17 @@ public class Seeds {
         if (bowlService.findAll().length == 0) {
             Ingrediente[] ingredientes = ingredienteService.findAll();
 
-            Bowl ensaladaPollo = new Bowl("Ensalada de Pollo", "Deliciosa ensalada con pollo", 12.0);
+            Bowl ensaladaPollo = new Bowl("Ensalada de Pollo", "Deliciosa ensalada con pollo");
             ensaladaPollo.getIngredientesAsociados().add(ingredientes[0]);
             ensaladaPollo.getIngredientesAsociados().add(ingredientes[1]);
             bowlService.save(ensaladaPollo);
 
-            Bowl arrozSalmon = new Bowl("Arroz con Salmón", "Arroz con salmón al estilo asiático", 15.0);
+            Bowl arrozSalmon = new Bowl("Arroz con Salmón", "Arroz con salmón al estilo asiático");
             arrozSalmon.getIngredientesAsociados().add(ingredientes[2]);
             arrozSalmon.getIngredientesAsociados().add(ingredientes[3]);
             bowlService.save(arrozSalmon);
 
-            Bowl ensaladaVegana = new Bowl("Ensalada Vegana", "Ensalada fresca y nutritiva", 10.0);
+            Bowl ensaladaVegana = new Bowl("Ensalada Vegana", "Ensalada fresca y nutritiva");
             ensaladaVegana.getIngredientesAsociados().add(ingredientes[4]);
             ensaladaVegana.getIngredientesAsociados().add(ingredientes[5]);
             bowlService.save(ensaladaVegana);
@@ -75,11 +75,11 @@ public class Seeds {
         if (menuService.findAll().length == 0) {
             Bowl[] bowls = bowlService.findAll();
 
-            Menu menuSaludable = new Menu("Menú Saludable", "Menú equilibrado para una alimentación saludable", 20.0);
+            Menu menuSaludable = new Menu("Menú Saludable", "Menú equilibrado para una alimentación saludable");
             menuSaludable.getBowlsAsociados().add(bowls[0]);
             menuService.save(menuSaludable);
 
-            Menu menuGourmet = new Menu("Menú Gourmet", "Exquisitas combinaciones gourmet", 25.0);
+            Menu menuGourmet = new Menu("Menú Gourmet", "Exquisitas combinaciones gourmet");
             menuGourmet.getBowlsAsociados().add(bowls[1]);
             menuGourmet.getBowlsAsociados().add(bowls[2]);
             menuService.save(menuGourmet);

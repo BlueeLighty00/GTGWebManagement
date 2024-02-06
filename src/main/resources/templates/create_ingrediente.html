@@ -37,10 +37,28 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="ingredientePrice" class="form-label">Precio</label>
-                            <input type="text" class="form-control" id="ingredientePrice"
+                            <label for="kcal" class="form-label">Kcal</label>
+                            <input type="text" class="form-control" id="kcal"
                                    placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
-                                   th:field="*{precio}">
+                                   th:field="*{kcal}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="protein" class="form-label">Proteina</label>
+                            <input type="text" class="form-control" id="protein"
+                                   placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
+                                   th:field="*{protein}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="carbohidrate" class="form-label">Carbohidratos</label>
+                            <input type="text" class="form-control" id="carbohidrate"
+                                   placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
+                                   th:field="*{carbohidrate}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fat" class="form-label">Grasas</label>
+                            <input type="text" class="form-control" id="fat"
+                                   placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
+                                   th:field="*{fat}">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg px-4">Guardar</button>
                     </form>
