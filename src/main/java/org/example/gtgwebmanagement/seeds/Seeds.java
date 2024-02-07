@@ -26,16 +26,16 @@ public class Seeds {
 
     private void seedIngredientes() {
         if (ingredienteService.findAll().length == 0) {
-            Ingrediente tomate = new Ingrediente("Tomate", 5.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente pollo = new Ingrediente("Pollo", 10.0, "Carne", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente lechuga = new Ingrediente("Lechuga", 15.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente arroz = new Ingrediente("Arroz", 20.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente salmon = new Ingrediente("Salmón", 25.0, "Pescado", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente pepino = new Ingrediente("Pepino", 30.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente frijoles = new Ingrediente("Frijoles", 25.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente aguacate = new Ingrediente("Aguacate", 20.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente queso = new Ingrediente("Queso", 15.0, "Lacteo", 1.0f, 1.2f, 1.4f, 1.6f);
-            Ingrediente maiz = new Ingrediente("Maíz", 10.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f);
+            Ingrediente tomate = new Ingrediente("Tomate", 5.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente pollo = new Ingrediente("Pollo", 10.0, "Carne", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente lechuga = new Ingrediente("Lechuga", 15.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente arroz = new Ingrediente("Arroz", 20.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente salmon = new Ingrediente("Salmón", 25.0, "Pescado", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente pepino = new Ingrediente("Pepino", 30.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente frijoles = new Ingrediente("Frijoles", 25.0, "Legumbre", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente aguacate = new Ingrediente("Aguacate", 20.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente queso = new Ingrediente("Queso", 15.0, "Lacteo", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
+            Ingrediente maiz = new Ingrediente("Maíz", 10.0, "Vegetal", 1.0f, 1.2f, 1.4f, 1.6f, 2f);
 
             ingredienteService.save(tomate);
             ingredienteService.save(pollo);

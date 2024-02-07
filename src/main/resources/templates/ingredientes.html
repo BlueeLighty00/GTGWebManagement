@@ -36,13 +36,14 @@
         <thead>
         <tr>
             <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">Price</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Precio</th>
             <th scope="col">Kcal</th>
-            <th scope="col">Protein</th>
-            <th scope="col">Carbohidrate</th>
-            <th scope="col">Fat</th>
+            <th scope="col">Proteina</th>
+            <th scope="col">Carbohidratos</th>
+            <th scope="col">Grasas</th>
+            <th scope="col">Gramos</th>
             <th scope="col">Actions</th>
         </tr>
         </thead>
@@ -53,9 +54,10 @@
             <td th:text="${ingrediente.tipo}"></td>
             <td th:text="${ingrediente.precio}"></td>
             <td th:text="${ingrediente.kcal}"></td>
-            <td th:text="${ingrediente.protein}"></td>
-            <td th:text="${ingrediente.carbohidrate}"></td>
-            <td th:text="${ingrediente.fat}"></td>
+            <td th:text="${ingrediente.proteina}"></td>
+            <td th:text="${ingrediente.carbohidrato}"></td>
+            <td th:text="${ingrediente.grasa}"></td>
+            <td th:text="${ingrediente.gramo}"></td>
             <td class="td-actions">
                 <div class="td-actions__wrapper">
                     <a th:href="@{'/ingrediente/' + ${ingrediente.id}}" role="button" class="btn btn-primary">

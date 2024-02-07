@@ -43,22 +43,28 @@
                                    th:field="*{kcal}">
                         </div>
                         <div class="mb-3">
-                            <label for="protein" class="form-label">Proteina</label>
-                            <input type="text" class="form-control" id="protein"
+                            <label for="proteina" class="form-label">Proteina</label>
+                            <input type="text" class="form-control" id="proteina"
                                    placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
-                                   th:field="*{protein}">
+                                   th:field="*{proteina}">
                         </div>
                         <div class="mb-3">
-                            <label for="carbohidrate" class="form-label">Carbohidratos</label>
-                            <input type="text" class="form-control" id="carbohidrate"
+                            <label for="carbohidrato" class="form-label">Carbohidratos</label>
+                            <input type="text" class="form-control" id="carbohidrato"
                                    placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
-                                   th:field="*{carbohidrate}">
+                                   th:field="*{carbohidrato}">
                         </div>
                         <div class="mb-3">
-                            <label for="fat" class="form-label">Grasas</label>
-                            <input type="text" class="form-control" id="fat"
+                            <label for="grasa" class="form-label">Grasas</label>
+                            <input type="text" class="form-control" id="grasa"
                                    placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
-                                   th:field="*{fat}">
+                                   th:field="*{grasa}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="gramo" class="form-label">Gramos</label>
+                            <input type="text" class="form-control" id="gramo"
+                                   placeholder="2.0"  pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$" required
+                                   th:field="*{gramo}">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg px-4">Guardar</button>
                     </form>
